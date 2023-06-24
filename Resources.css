@@ -1,0 +1,27 @@
+.resourcesContent {
+  height: 100vh;
+  background: #333 url("./photos/BPSwallpaper.png") no-repeat center/contain;
+  color: rgb(248, 249, 250);
+  padding: 3.5em 0 0 3.5em;
+}
+
+.resourcesContent h1 {
+  margin-bottom: 1em;
+}
+
+.resourcesContent ul {
+  list-style: none;
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .resourcesContent {
+    background: #333 url("./photos/BPSwallpaper.png") no-repeat bottom/contain;
+  }
+}
+
+@media (max-width: 400px) {
+  .resourcesContent ul {
+    font-size: 1.5em;
+  }
+}

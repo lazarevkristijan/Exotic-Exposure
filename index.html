@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exotic Exposure</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul id="navItems">
+        <a href="./index.html"><li id="logo">EXOTIC EXPOSURE</li></a>
+        <li>
+          <span class="navSpan"><a href="./Resources.html">Resources</a></span>
+        </li>
+        <li>
+          <span class="navSpan"><a href="./About.html">About</a></span>
+        </li>
+
+        <li id="dropDown">
+          <span class="navSpan"><i class="bi bi-list"></i> </span>
+        </li>
+      </ul>
+      <div class="dropDownMenu">
+        <a class="dropDownItem" href="./Resources.html"
+          ><button>Resources</button></a
+        >
+        <a class="dropDownItem" href="./About.html"><button>About</button></a>
+      </div>
+    </nav>
+    <section class="wellcomeScreen">
+      <div class="wellcomeScreenOverlay"></div>
+
+      <img src="photos/WALLPAPER4.jpg" alt="Background picture of cars" />
+      <button>JUMP RIGHT IN</button>
+    </section>
+
+    <section id="searchFilters">
+      <div class="filtersContainer">
+        <h1>Select or Deselect vehicle brands to show</h1>
+        <div class="filter mercedes">
+          <img src="./photos/Mercedes-Benz.png" alt="" />
+        </div>
+        <div class="filter audi">
+          <img src="./photos/Audi.png" alt="" />
+        </div>
+        <div class="filter ferrari">
+          <img src="./photos/Ferrari.png" alt="" />
+        </div>
+        <div class="filter lamborghini">
+          <img src="./photos/Lamborghini.png" alt="" />
+        </div>
+        <div class="filter porsche">
+          <img src="./photos/Porsche.png" alt="" />
+        </div>
+        <div class="filter bmw">
+          <img src="./photos/bmw.png" alt="" />
+        </div>
+        <button id="applyChoices">APPLY CHOICES</button>
+      </div>
+    </section>
+
+    <section class="contentContainer">
+      <section class="contentContainerImages">
+        <img class="a display1" src="photos/audi1.jpg" alt="Audi 1" />
+        <img class="b display1" src="photos/bmw1.jpg" alt="BMW 1" />
+        <img class="f display1" src="photos/ferrari1.jpg" alt="Ferrari 1" />
+        <img class="l display1" src="photos/lambo1.jpg" alt="Lamborghini 1" />
+        <img class="m display1" src="photos/merc1.jpg" alt="Mercedes 1" />
+        <img class="p display1" src="photos/porsche1.jpg" alt="Porsche 1" />
+
+        <img class="a display1" src="photos/audi2.jpg" alt="Audi 2" />
+        <img class="b display1" src="photos/bmw2.jpg" alt="BMW 2" />
+        <img class="f display1" src="photos/ferrari2.jpg" alt="Ferrari 2" />
+        <img class="l display1" src="photos/lambo2.jpg" alt="Lamborghini 2" />
+        <img class="m display1" src="photos/merc2.jpg" alt="Mercedes 2" />
+        <img class="p display1" src="photos/porsche2.jpg" alt="Porsche 2" />
+
+        <img class="a display1" src="photos/audi3.jpg" alt="Audi 3" />
+        <img class="b display1" src="photos/bmw3.jpg" alt="BMW 3" />
+        <img class="f display1" src="photos/ferrari3.jpg" alt="Ferrari 3" />
+        <img class="l display1" src="photos/lambo3.jpg" alt="Lamborghini 3" />
+        <img class="m display1" src="photos/merc3.jpg" alt="Mercedes 3" />
+        <img class="p display1" src="photos/porsche3.jpg" alt="Porsche 3" />
+
+        <img
+          class="a display2"
+          style="display: none"
+          src="photos/audi4.jpg"
+          alt="Audi 4"
+        />
+        <img
+          class="b display2"
+          style="display: none"
+          src="photos/bmw4.jpg"
+          alt="BMW 4"
+        />
+        <img
+          class="f display2"
+          style="display: none"
+          src="photos/ferrari4.jpg"
+          alt="Ferrari 4"
+        />
+        <img
+          class="l display2"
+          style="display: none"
+          src="photos/lambo4.jpg"
+          alt="Lamborghini 4"
+        />
+        <img
+          class="m display2"
+          style="display: none"
+          src="photos/merc4.jpg"
+          alt="Mercedes 4"
+        />
+        <img
+          class="p display2"
+          style="display: none"
+          src="photos/porsche4.jpg"
+          alt="Porsche 4"
+        />
+
+        <img
+          class="a display2"
+          style="display: none"
+          src="photos/audi5.jpg"
+          alt="Audi 5"
+        />
+        <img
+          class="b display2"
+          style="display: none"
+          src="photos/bmw5.jpg"
+          alt="BMW 5"
+        />
+        <img
+          class="f display2"
+          style="display: none"
+          src="photos/ferrari5.jpg"
+          alt="Ferrari 5"
+        />
+        <img
+          class="l display2"
+          style="display: none"
+          src="photos/lambo5.jpg"
+          alt="Lamborghini 5"
+        />
+        <img
+          class="m display2"
+          style="display: none"
+          src="photos/merc5.jpg"
+          alt="Mercedes 5"
+        />
+        <img
+          class="p display2"
+          style="display: none"
+          src="photos/porsche5.jpg"
+          alt="Porsche 5"
+        />
+
+        <img
+          class="a display2"
+          style="display: none"
+          src="photos/audi6.jpg"
+          alt="Audi 6"
+        />
+        <img
+          class="b display2"
+          style="display: none"
+          src="photos/bmw6.jpg"
+          alt="BMW 6"
+        />
+        <img
+          class="f display2"
+          style="display: none"
+          src="photos/ferrari6.jpg"
+          alt="Ferrari 6"
+        />
+        <img
+          class="l display2"
+          style="display: none"
+          src="photos/lambo6.jpg"
+          alt="Lamborghini 6"
+        />
+        <img
+          class="m display2"
+          style="display: none"
+          src="photos/merc6.jpg"
+          alt="Mercedes 6"
+        />
+        <img
+          class="p display2"
+          style="display: none"
+          src="photos/porsche6.jpg"
+          alt="Porsche 6"
+        />
+
+        <img
+          class="a display3"
+          style="display: none"
+          src="photos/audi7.jpg"
+          alt="Audi 7"
+        />
+        <img
+          class="b display3"
+          style="display: none"
+          src="photos/bmw7.jpg"
+          alt="BMW 7"
+        />
+        <img
+          class="f display3"
+          style="display: none"
+          src="photos/ferrari7.jpg"
+          alt="Ferrari 7"
+        />
+        <img
+          class="l display3"
+          style="display: none"
+          src="photos/lambo7.jpg"
+          alt="Lamborghini 7"
+        />
+        <img
+          class="m display3"
+          style="display: none"
+          src="photos/merc7.jpg"
+          alt="Mercedes 7"
+        />
+        <img
+          class="p display3"
+          style="display: none"
+          src="photos/porsche7.jpg"
+          alt="Porsche 7"
+        />
+
+        <img
+          class="a display3"
+          style="display: none"
+          src="photos/audi8.jpg"
+          alt="Audi 8"
+        />
+        <img
+          class="b display3"
+          style="display: none"
+          src="photos/bmw8.jpg"
+          alt="BMW 8"
+        />
+        <img
+          class="f display3"
+          style="display: none"
+          src="photos/ferrari8.jpg"
+          alt="Ferrari 8"
+        />
+        <img
+          class="l display3"
+          style="display: none"
+          src="photos/lambo8.jpg"
+          alt="Lamborghini 8"
+        />
+        <img
+          class="m display3"
+          style="display: none"
+          src="photos/merc8.jpg"
+          alt="Mercedes 8"
+        />
+        <img
+          class="p display3"
+          style="display: none"
+          src="photos/porsche8.jpg"
+          alt="Porsche 8"
+        />
+
+        <img
+          class="a display3"
+          style="display: none"
+          src="photos/audi9.jpg"
+          alt="Audi 9"
+        />
+        <img
+          class="b display3"
+          style="display: none"
+          src="photos/bmw9.jpg"
+          alt="BMW 9"
+        />
+        <img
+          class="f display3"
+          style="display: none"
+          src="photos/ferrari9.jpg"
+          alt="Ferrari 9"
+        />
+        <img
+          class="l display3"
+          style="display: none"
+          src="photos/lambo9.jpg"
+          alt="Lamborghini 9"
+        />
+        <img
+          class="m display3"
+          style="display: none"
+          src="photos/merc9.jpg"
+          alt="Mercedes 9"
+        />
+        <img
+          class="p display3"
+          style="display: none"
+          src="photos/porsche9.jpg"
+          alt="Porsche 9"
+        />
+
+        <img
+          class="a display4"
+          style="display: none"
+          src="photos/audi10.jpg"
+          alt="Audi 10"
+        />
+        <img
+          class="b display4"
+          style="display: none"
+          src="photos/bmw10.jpg"
+          alt="BMW 10"
+        />
+        <img
+          class="f display4"
+          style="display: none"
+          src="photos/ferrari10.jpg"
+          alt="Ferrari 10"
+        />
+        <img
+          class="l display4"
+          style="display: none"
+          src="photos/lambo10.jpg"
+          alt="Lamborghini 10"
+        />
+        <img
+          class="m display4"
+          style="display: none"
+          src="photos/merc10.jpg"
+          alt="Mercedes 10"
+        />
+        <img
+          class="p display4"
+          style="display: none"
+          src="photos/porsche10.jpg"
+          alt="Porsche 10"
+        />
+
+        <img
+          class="a display4"
+          style="display: none"
+          src="photos/audi11.jpg"
+          alt="Audi 11"
+        />
+        <img
+          class="b display4"
+          style="display: none"
+          src="photos/bmw11.jpg"
+          alt="BMW 11"
+        />
+        <img
+          class="f display4"
+          style="display: none"
+          src="photos/ferrari11.jpg"
+          alt="Ferrari 11"
+        />
+        <img
+          class="l display4"
+          style="display: none"
+          src="photos/lambo11.jpg"
+          alt="Lamborghini 11"
+        />
+        <img
+          class="m display4"
+          style="display: none"
+          src="photos/merc11.jpg"
+          alt="Mercedes 11"
+        />
+        <img
+          class="p display4"
+          style="display: none"
+          src="photos/porsche11.jpg"
+          alt="Porsche 11"
+        />
+
+        <img
+          class="a display4"
+          style="display: none"
+          src="photos/audi12.jpg"
+          alt="Audi 12"
+        />
+        <img
+          class="b display4"
+          style="display: none"
+          src="photos/bmw12.jpg"
+          alt="BMW 12"
+        />
+        <img
+          class="f display4"
+          style="display: none"
+          src="photos/ferrari12.jpg"
+          alt="Ferrari 12"
+        />
+        <img
+          class="l display4"
+          style="display: none"
+          src="photos/lambo12.jpg"
+          alt="Lamborghini 12"
+        />
+        <img
+          class="m display4"
+          style="display: none"
+          src="photos/merc12.jpg"
+          alt="Mercedes 12"
+        />
+        <img
+          class="p display4"
+          style="display: none"
+          src="photos/porsche12.jpg"
+          alt="Porsche 12"
+        />
+
+        <img
+          class="a display5"
+          style="display: none"
+          src="photos/audi13.jpg"
+          alt="Audi 13"
+        />
+        <img
+          class="b display5"
+          style="display: none"
+          src="photos/bmw13.jpg"
+          alt="BMW 13"
+        />
+        <img
+          class="f display5"
+          style="display: none"
+          src="photos/ferrari13.jpg"
+          alt="Ferrari 13"
+        />
+        <img
+          class="l display5"
+          style="display: none"
+          src="photos/lambo13.jpg"
+          alt="Lamborghini 13"
+        />
+        <img
+          class="m display5"
+          style="display: none"
+          src="photos/merc13.jpg"
+          alt="Mercedes 13"
+        />
+        <img
+          class="p display5"
+          style="display: none"
+          src="photos/porsche13.jpg"
+          alt="Porsche 13"
+        />
+
+        <img
+          class="a display5"
+          style="display: none"
+          src="photos/audi14.jpg"
+          alt="Audi 14"
+        />
+        <img
+          class="b display5"
+          style="display: none"
+          src="photos/bmw14.jpg"
+          alt="BMW 14"
+        />
+        <img
+          class="f display5"
+          style="display: none"
+          src="photos/ferrari14.jpg"
+          alt="Ferrari 14"
+        />
+        <img
+          class="l display5"
+          style="display: none"
+          src="photos/lambo14.jpg"
+          alt="Lamborghini 14"
+        />
+        <img
+          class="m display5"
+          style="display: none"
+          src="photos/merc14.jpg"
+          alt="Mercedes 14"
+        />
+        <img
+          class="p display5"
+          style="display: none"
+          src="photos/porsche14.jpg"
+          alt="Porsche 14"
+        />
+
+        <img
+          class="a display5"
+          style="display: none"
+          src="photos/audi15.jpg"
+          alt="Audi 15"
+        />
+        <img
+          class="b display5"
+          style="display: none"
+          src="photos/bmw15.jpg"
+          alt="BMW 15"
+        />
+        <img
+          class="f display5"
+          style="display: none"
+          src="photos/ferrari15.jpg"
+          alt="Ferrari 15"
+        />
+        <img
+          class="l display5"
+          style="display: none"
+          src="photos/lambo15.jpg"
+          alt="Lamborghini 15"
+        />
+        <img
+          class="m display5"
+          style="display: none"
+          src="photos/merc15.jpg"
+          alt="Mercedes 15"
+        />
+        <img
+          class="p display5"
+          style="display: none"
+          src="photos/porsche15.jpg"
+          alt="Porsche 15"
+        />
+
+        <img
+          class="a display6"
+          style="display: none"
+          src="photos/audi16.jpg"
+          alt="Audi 16"
+        />
+        <img
+          class="b display6"
+          style="display: none"
+          src="photos/bmw16.jpg"
+          alt="BMW 16"
+        />
+        <img
+          class="f display6"
+          style="display: none"
+          src="photos/ferrari16.jpg"
+          alt="Ferrari 16"
+        />
+        <img
+          class="l display6"
+          style="display: none"
+          src="photos/lambo16.jpg"
+          alt="Lamborghini 16"
+        />
+        <img
+          class="m display6"
+          style="display: none"
+          src="photos/merc16.jpg"
+          alt="Mercedes 16"
+        />
+        <img
+          class="p display6"
+          style="display: none"
+          src="photos/porsche16.jpg"
+          alt="Porsche 16"
+        />
+
+        <img
+          class="a display6"
+          style="display: none"
+          src="photos/audi17.jpg"
+          alt="Audi 17"
+        />
+        <img
+          class="b display6"
+          style="display: none"
+          src="photos/bmw17.jpg"
+          alt="BMW 17"
+        />
+        <img
+          class="f display6"
+          style="display: none"
+          src="photos/ferrari17.jpg"
+          alt="Ferrari 17"
+        />
+        <img
+          class="l display6"
+          style="display: none"
+          src="photos/lambo17.jpg"
+          alt="Lamborghini 17"
+        />
+        <img
+          class="m display6"
+          style="display: none"
+          src="photos/merc17.jpg"
+          alt="Mercedes 17"
+        />
+        <img
+          class="p display6"
+          style="display: none"
+          src="photos/porsche17.jpg"
+          alt="Porsche 17"
+        />
+
+        <img
+          class="a display6"
+          style="display: none"
+          src="photos/audi18.jpg"
+          alt="Audi 18"
+        />
+        <img
+          class="b display6"
+          style="display: none"
+          src="photos/bmw18.jpg"
+          alt="BMW 18"
+        />
+        <img
+          class="f display6"
+          style="display: none"
+          src="photos/ferrari18.jpg"
+          alt="Ferrari 18"
+        />
+        <img
+          class="l display6"
+          style="display: none"
+          src="photos/lambo18.jpg"
+          alt="Lamborghini 18"
+        />
+        <img
+          class="m display6"
+          style="display: none"
+          src="photos/merc18.jpg"
+          alt="Mercedes 18"
+        />
+        <img
+          class="p display6"
+          style="display: none"
+          src="photos/porsche18.jpg"
+          alt="Porsche 18"
+        />
+
+        <img
+          class="a display7"
+          style="display: none"
+          src="photos/audi19.jpg"
+          alt="Audi 19"
+        />
+        <img
+          class="b display7"
+          style="display: none"
+          src="photos/bmw19.jpg"
+          alt="BMW 19"
+        />
+        <img
+          class="f display7"
+          style="display: none"
+          src="photos/ferrari19.jpg"
+          alt="Ferrari 19"
+        />
+        <img
+          class="l display7"
+          style="display: none"
+          src="photos/lambo19.jpg"
+          alt="Lamborghini 19"
+        />
+        <img
+          class="m display7"
+          style="display: none"
+          src="photos/merc19.jpg"
+          alt="Mercedes 19"
+        />
+        <img
+          class="p display7"
+          style="display: none"
+          src="photos/porsche19.jpg"
+          alt="Porsche 19"
+        />
+
+        <img
+          class="a display7"
+          style="display: none"
+          src="photos/audi20.jpg"
+          alt="Audi 20"
+        />
+        <img
+          class="b display7"
+          style="display: none"
+          src="photos/bmw20.jpg"
+          alt="BMW 20"
+        />
+        <img
+          class="f display7"
+          style="display: none"
+          src="photos/ferrari20.jpg"
+          alt="Ferrari 20"
+        />
+        <img
+          class="l display7"
+          style="display: none"
+          src="photos/lambo20.jpg"
+          alt="Lamborghini 20"
+        />
+        <img
+          class="m display7"
+          style="display: none"
+          src="photos/merc20.jpg"
+          alt="Mercedes 20"
+        />
+        <img
+          class="p display7"
+          style="display: none"
+          src="photos/porsche20.jpg"
+          alt="Porsche 20"
+        />
+      </section>
+
+      <section class="contentContainerButton">
+        <button class="loadButton">LOAD MORE</button>
+      </section>
+    </section>
+
+    <footer>
+      <div class="footerItems">
+        <div class="text">
+          <p>FIND ME AT:</p>
+        </div>
+
+        <div class="icons">
+          <a href="https://www.instagram.com/kristijan.lazarev/" target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://stackoverflow.com/users/21911546/kristijanlazarev"
+            target="_blank"
+            ><i class="bi bi-stack-overflow"></i
+          ></a>
+          <a href="https://github.com/lazarevkristijan" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

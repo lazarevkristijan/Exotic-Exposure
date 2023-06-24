@@ -1,0 +1,42 @@
+.aboutContent {
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  padding-top: 2em;
+  background: url("https://i.giphy.com/media/j0q2t5XWdbx6qgh0x6/giphy.webp")
+    center;
+}
+
+.aboutContent h1 {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.aboutContent p {
+  max-width: 440px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1em 1em 0.3em 1em;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 1.1em;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.aboutContent p:nth-child(3) {
+  font-weight: 500;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0.3em 1em 0.4em 1em;
+  color: #e32227;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 440px) {
+  .aboutContent {
+    height: 130vh;
+  }
+
+  .aboutContent p {
+    max-width: 320px;
+  }
+}

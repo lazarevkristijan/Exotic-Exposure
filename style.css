@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+/* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(33, 37, 41);
+}
+
+nav li {
+  width: 20%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(248, 249, 250);
+}
+
+nav #navItems {
+  width: 100%;
+  height: 100%;
+}
+
+.navSpan {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#logo {
+  border: 1px solid rgb(248, 249, 250);
+  transition: 0.3s ease;
+  margin-left: 1em;
+  width: 200px;
+  height: 8vh;
+}
+
+#dropDown {
+  display: none;
+}
+
+#dropDown .navSpan i {
+  font-size: 1.5em;
+}
+
+.dropDownMenu {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* TOP PAGE TOP PAGE TOP PAGE TOP PAGE TOP PAGE TOP PAGE TOP PAGE TOP PAGE */
+
+.wellcomeScreen {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wellcomeScreen img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.wellcomeScreen button {
+  width: 200px;
+  height: 10vh;
+  position: absolute;
+  border-radius: 2em;
+  background-color: rgba(33, 37, 41, 0.6);
+  font-weight: 500;
+  font-size: 1.3em;
+  border: 2px solid rgb(33, 37, 41);
+  color: rgb(248, 249, 250);
+}
+
+.wellcomeScreen button::selection {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.wellcomeScreenOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* SEARCH FILTERS SEARCH FILTERS SEARCH FILTERS SEARCH FILTERS SEARCH FILTERS */
+
+#searchFilters {
+  width: 100%;
+  height: 60vh;
+  background-color: rgb(33, 37, 41);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.filtersContainer {
+  width: 410px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filtersContainer h1 {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  color: rgb(248, 249, 250);
+  margin-top: 4vh;
+}
+
+.filter {
+  width: 125px;
+  height: 70px;
+  background-color: rgba(108, 117, 125, 0.4);
+  border: 1px solid rgb(248, 249, 250);
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.3em;
+  transition: 0.3s ease;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+.filter:hover {
+  cursor: pointer;
+}
+
+.filter img {
+  width: 50%;
+  height: 80%;
+}
+
+.filter.audi img {
+  width: 100%;
+  height: 70%;
+}
+
+.filter.any img {
+  width: 13%;
+  height: 70%;
+}
+
+.inActive {
+  display: none;
+}
+
+.inActiveFilter {
+  background-color: transparent;
+}
+
+#applyChoices {
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  border: 1.5px solid rgb(248, 249, 250);
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+}
+
+/* RESULT CONTAINER RESULT CONTAINER RESULT CONTAINER RESULT CONTAINER */
+.contentContainer {
+  width: 100%;
+}
+
+.contentContainerImages {
+  height: auto;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contentContainer img {
+  max-height: 300px;
+  border-radius: 1em;
+  margin: 0.5em 0;
+  transition: 0.25s ease;
+}
+
+.contentContainerButton {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.loadButton {
+  width: 200px;
+  height: 10vh;
+  border-radius: 2em;
+  background-color: rgba(33, 37, 41, 0.6);
+  font-weight: 500;
+  font-size: 1.3em;
+  border: 2px solid rgb(33, 37, 41);
+  color: rgb(248, 249, 250);
+  margin: 1em 0;
+}
+
+.loadButton::selection {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer {
+  width: 100%;
+  height: 35vh;
+  background-image: linear-gradient(#333, #000);
+  padding: 2em;
+}
+
+.footerItems {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footerItems .text {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.footerItems .icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer p {
+  width: 100%;
+  height: 10vh;
+  color: rgb(248, 249, 250);
+  border: 1px solid rgb(248, 249, 250);
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 2em;
+  margin: 0.5em;
+  color: rgb(248, 249, 250);
+}
+
+a .bi-instagram {
+  color: rgb(255, 177, 212);
+}
+
+a .bi-stack-overflow {
+  color: #eabe9c;
+}
+
+@media (max-width: 640px) {
+  nav li {
+    display: none;
+  }
+
+  #logo,
+  #dropDown {
+    display: inline-flex;
+  }
+
+  #navItems {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropDownMenu {
+    position: absolute;
+    left: 65vw;
+    width: 30vw;
+    height: 20vw;
+    border-radius: 0px 0px 0px 10px;
+    background-color: rgba(33, 37, 41, 0.6);
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: 0.25s ease-in;
+    transform: translateX(40vw) scale(0.5);
+  }
+
+  .dropDownMenu a {
+    width: 100%;
+    height: 50%;
+  }
+
+  .dropDownMenu button {
+    background-color: rgba(33, 37, 41, 0.6);
+    border: 2px solid rgb(33, 37, 41);
+    color: rgb(248, 249, 250);
+    width: 100%;
+    height: 100%;
+    font-size: 0.9em;
+  }
+
+  .dropDownMenu a:nth-child(2) button {
+    border-radius: 0px 0px 0px 10px;
+  }
+
+  .dropDownMenu button:hover {
+    cursor: pointer;
+  }
+
+  .dropDownMenu button::selection {
+    background-color: transparent;
+  }
+
+  .wellcomeScreen button {
+    width: 200px;
+  }
+
+  .contentContainer img {
+    max-height: 180px;
+  }
+
+  .footerItems .text {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+}
