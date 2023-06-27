@@ -11,10 +11,10 @@
 body {
   overflow-x: hidden;
 }
-
+/* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV*/
 nav {
   width: 100%;
-  height: 10vh;
+  height: 72px;
   background-color: rgb(33, 37, 41);
 }
 
@@ -42,7 +42,7 @@ nav #navItems {
   transition: 0.3s ease;
   margin-left: 1em;
   width: 200px;
-  height: 8vh;
+  height: 57px;
 }
 
 #dropDown {
@@ -62,7 +62,7 @@ a {
   color: inherit;
 }
 
-/* TOP PAGE TOP PAGE TOP PAGE TOP PAGE TOP PAGE TOP PAGE TOP PAGE TOP PAGE */
+/* HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION  */
 
 .wellcomeScreen {
   width: 100%;
@@ -81,7 +81,7 @@ a {
 
 .wellcomeScreen button {
   width: 200px;
-  height: 10vh;
+  height: 72px;
   position: absolute;
   border-radius: 2em;
   background-color: rgba(33, 37, 41, 0.6);
@@ -103,10 +103,9 @@ a {
 }
 
 /* SEARCH FILTERS SEARCH FILTERS SEARCH FILTERS SEARCH FILTERS SEARCH FILTERS */
-
 #searchFilters {
   width: 100%;
-  height: 60vh;
+  height: 432px;
   background-color: rgb(33, 37, 41);
   display: flex;
   justify-content: center;
@@ -213,7 +212,7 @@ img::selection {
 
 .loadButton {
   width: 200px;
-  height: 10vh;
+  height: 72px;
   border-radius: 2em;
   background-color: rgba(33, 37, 41, 0.6);
   font-weight: 500;
@@ -232,7 +231,7 @@ img::selection {
 
 footer {
   width: 100%;
-  height: 35vh;
+  height: 252px;
   background-image: linear-gradient(#333, #000);
   padding: 2em;
 }
@@ -260,7 +259,7 @@ footer a {
 
 footer p {
   width: 100%;
-  height: 10vh;
+  height: 72px;
   color: rgb(248, 249, 250);
   border: 1px solid rgb(248, 249, 250);
   transition: 0.3s ease;
@@ -282,6 +281,8 @@ a .bi-instagram {
 a .bi-stack-overflow {
   color: #eabe9c;
 }
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
 
 @media (max-width: 640px) {
   nav li {
@@ -345,11 +346,25 @@ a .bi-stack-overflow {
     max-height: 180px;
   }
 
-.footerItems .text {
+  .footerItems .text {
   margin: 0 auto;
+  }
+
+  .footerItems .icons {
+  margin: 0 auto;
+  }
 }
 
-.footerItems .icons {
-margin: 0 auto;
-}
+@media (max-width: 300px) {
+  .dropDownMenu {
+    width: 35vw;
+    height: 25vh;
+  }
+
+  #searchFilters {
+    height: auto;
+  }
+  footer {
+    padding: 0;
+  }
 }
